@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.display{
+    display: none;
+}
+#join_container{
+   position: absolute;
+   box-shadow: 10px 10px rgb(0, 0, 0) ;
+   font-family: ONE-Mobile-POP;
+   background-color: white;
+   margin: 10vh auto;
+   width: 700px;
+   height: 900px;
+   top: 0; left: 0;right: 0;
+   border-radius: 25px;
+   z-index: 3;
+}
+    
+.head{
+    width: 100%;
+    margin: 10px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.head h1 {
+    text-align: center;
+}
+.head h1 img{
+    width: 150px;
+    height: 150px;
+}
+
+.join_container div{
+    margin-top: 10px;
+}
+.join_container{
+    padding-left: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+.join_container input{
+    width: 450px;
+    height: 50px;
+}
+.join_container span{
+    padding-left: 5px;
+    font-size: 25px;
+}
+.birthday_box{
+    width: 450px;
+    display: flex;
+}
+.year input{
+    margin-right: 10px;
+    height: 50px;
+    width: 150px;
+}
+.month select{
+    border: 1px solid black;
+    margin-right: 10px;
+    height: 50px;
+    width: 130px;
+}
+.day input{
+    height: 50px;
+    width: 150px;
+}
+.gender{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.password_box select{
+    color: rgb(155, 155, 155);
+    font-size: 15px;
+    height: 50px;
+    width: 450px;   
+}
+#join-bt button {
+    font-size: 20px;
+    margin: 15px auto; 
+    width: 450px; height: 50px;
+    background: #cfcfcf;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}

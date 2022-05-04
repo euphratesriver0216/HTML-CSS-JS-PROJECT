@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말랑 홈페이지</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-container">
+            <div id="header-logo"><a href="index.html"><img src="images/mallangLogo.png"></a>
+            </div>
+            <ul id="title-name">
+                <li><a href="Guide.html">관람안내</a></li>
+                <li><a href="online_gallery.html">온라인 갤러리</a></li>
+                <li><a href="art_gallery.html">전시관</a></li>
+                <li><a href="map.html">전시관 위치</a></li>
+                <li><a id="login-button" href="login.html">로그인</a></li>
+            </ul>
+            <div >
+                <a href="#" class="menu-bt"> <img src="images/menu.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 여기까지가 헤더 -->
+    <!-- <div id="join-form-body">
+        <form onsubmit="saveUserData()" autocomplete="off">
+            <label for="user-id">아이디</label>
+            <input id="user-id" type="text" required onchange="checkForm()">
+            <label for="user-pw">패스워드</label>
+            <input id="user-pw" type="text" required>
+            <button type="submit">제출</button>
+        </form>
+    </div> -->
+    <div id="join-form-body">
+        <div class="join-form-title">Resistration</div>
+        <!-- action에 페이지 주소입력 -->
+        <form method="POST" class="join-form-container">
+            <fieldset class="join-form-field">
+                <div class="input-container">
+                    <label for="username">USER ID<small style="color: red;">*</small></label><br>
+                    <input class="input-box" type="text" id="user-id" name="username" placeholder="Enter Your ID"
+                        onchange="checkId()" required>
+                    <!--유효성 검사 후 잘못되었을때 경고 문자-->
+                    <text id="wrongid" class="wrong-message" style="color: red; font-size: small;"></text>
+                </div>
+                <div class="input-container">
+                    <label for="userpw">Password<small style="color: red;">*</small></label><br>
+                    <input class="input-box" type="password" id="user-pw" name="userpw"
+                        placeholder="Enter Your Password" onchange="checkPw()" required>
+                    <!--유효성 검사 후 잘못되었을때 경고 문자-->
+                    <text id="wrongPw" class="wrong-message" style="color: red; font-size: small;"></text>
+                </div>
+                <div class="input-container">
+                    <input class="input-box" type="password" id="user-pw-confirm" name="reUserpw"
+                        placeholder="Confirm Password" onchange="reCheckPw()" required><br>
+                    <!--유효성 검사 후 잘못되었을때 경고 문자-->
+                    <text id="wrongRePw" class="wrong-message" style="color: red; font-size: small;"></text>
+                </div>
+                <div class="input-container">
+                    <label for="name">Name<small style="color: red;">*</small></label><br>
+                    <input class="input-box" type="text" id="user-name" name="name" placeholder="Enter Your Name"
+                        onchange="checkName()" required>
+                    <!--유효성 검사 후 잘못되었을때 경고 문자-->
+                    <text id="wrongName" class="wrong-message" style="color: red; font-size: small;"></text>
+                </div>
+
+                <div class="input-container">
+                    <label for="birthdate">Date of Birth</label><br>
+                    <input class="input-box" type="date" id="user-birth" name="birthdate"><br>
+                </div>
+                <div class="input-container">
+                    <label for="useremail">Email</label><br>
+                    <input class="input-box" type="email" id="user-email" name="useremail"
+                        placeholder="Enter Your Email" onchange="checkMail()">
+                    <!--유효성 검사 후 잘못되었을때 경고 문자-->
+                    <text id="usereMail" class="wrong-message" style="color: red; font-size: small;"></text>
+
+                </div>
+            </fieldset>
+            <input type="button" value="Sign Up" id="signUp" onclick="saveUserData()">
+        </form>
+        
+    </div>
+    
+    
+    <!-- 아래로 푸터 -->
+    <div id="footer">
+        <div id="footer-container">
+            <div id="footer-top">
+                <ul id="footer-TL">
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="privacy.html">개인정보처리방침</a></li>
+                </ul>
+                <ul id="footer-TR">
+                    <li>개인블로그</li>
+                    <!-- 블로그 주소 변경시 main자바에서 주소변경 -->
+                    <li><a href="#PSG">박성근<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#PHM">박해민<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#LCS">임철순<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#GJH">곽지현<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                </ul>
+            </div>
+            <div id="footer-line"></div>
+            <div id="footer-low">
+                <ul id="footer-lowDL">
+                    <span>©제작된 본 홈페이지에 대한 모든 권리는 mallang에 귀속됩니다.</span>
+                </ul>
+                <ul id="footer-lowDR">
+                    <span>주소 : 서울특별시 강동구 천호대로 995 금복빌딩 3,4층</span><br>
+                    <span>Tel : 00-000-0000 팩스번호 : 000-0000-0000</span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="java.js\joininput.js"></script>
+    <script src="java.js/main.js"></script>
+</body>
+
+</html>

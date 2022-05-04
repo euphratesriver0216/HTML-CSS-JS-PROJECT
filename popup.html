@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            width: 500px;
+            height: 700px;
+            position: absolute;
+            resize: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="popup-container">
+        <form id="find-password-container">
+            <div id="find-password-title">Find Your Password</div>
+            <label for="find-input-id">USER ID</label>
+            <input type="text" id="find-input-id" class="find-input-box" placeholder="Enter Your ID" required>
+            <label for="find-input-email">Email</label>
+            <input type="text" id="find-input-email" class="find-input-box" placeholder="Enter Your Email" required>
+            <label for="find-password" id="find-password-window">▼ ▼ Check this ▼ ▼</label>
+            <input type="text" id="find-password" class="find-input-box" readonly>
+            <button type="button" id="find-password-button" onclick="findPassword()">Find It!!</button>
+        </form>
+
+    </div>
+    <script src="java.js/findPassword.js"></script>
+</body>
+
+</html>

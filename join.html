@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말랑 홈페이지</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/join.css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-container">
+            <div id="header-logo"><a href="index.html"><img src="images/mallangLogo.png"></a>
+            </div>
+            <ul id="title-name">
+                <li><a href="Guide.html">관람안내</a></li>
+                <li><a href="online_gallery.html">온라인 갤러리</a></li>
+                <li><a href="art_gallery.html">전시관</a></li>
+                <li><a href="map.html">전시관 위치</a></li>
+                <li><a id="login-button" href="login.html">로그인</a></li>
+            </ul>
+            <div >
+                <a href="#" class="menu-bt"> <img src="images/menu.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 여기까지가 헤더 -->
+    <div id="join-body">
+        <div id="joinAll">
+            <!--action 위치에 회원가입 창 주소-->
+            <form class="join-form" name="frmJoin" action="joinform.html" onSubmit="return CheckForm(this)">
+                <img class="join-page-logo" src="images/mallangLogo.png" id="logo" onclick="mainPage()" /><br />
+                <label class="check-all-container" for="checkAll">
+                    <input class="check-box" type="checkbox" name="checkBox_All" id="checkBoxAll" /><b>전체 약관 동의</b>
+                </label>
+                <!--이용약관-->
+                <label for="check">
+                    <div class="join-content">
+                        <ul>
+                            <span>Mallang에서 제공하는 서비스 이용과 관련하여 필요한 사항을 규정합니다.</span>
+
+                            <h2 class="terms-name">1. 가입 약관의 동의</h2>
+                            <li>말랑의 서비스를 이용하여 주셔서 감사합니다.<br>
+                                말랑의 콘텐츠는 회원 가입 약관에 동의하는 것을 조건으로 하여 사용자에게 제공합니다.
+                                말랑의 가입 약관 내용은 수시로 변경 될 수 있으며 변경된 약관 내용은 서비스 화면을 통해 공지하거나 기타의 방법으로 회원에게 공지함으로써 효력을 발생합니다.
+                                말랑의 서비스 이용 약관은 안랩이 제공하는 모든 콘텐츠에 적용됩니다. 말랑의 콘텐츠라 함은 말랑이 서비스 하는 모든 문자, 그래픽, 파일, 소프트웨어를
+                                말합니다.
+                            </li>
+
+                            <h2 class="terms-name">2. 말랑에서 서비스 하는 콘텐츠에 대한 저작권</h2>
+                            <li>말랑에서 서비스 하는 모든 내용에 대한 저작권은 다음 두 가지 경우로 분류됩니다.
+                                말랑 자체 개발 콘텐츠 : 말랑 저작권 소유
+                                별도 제공처가 표기된 콘텐츠 : 콘텐츠 제공처 저작권 소유
+                                별도로 제공처가 표기된 콘텐츠에 대해서는 모든 법적 책임이 내용을 제공한 제공처에 있으며, 사용 시에는 말랑이 아닌 제공처에 사전 승인을 득하여야 합니다.
+                                만일 사전 협의 없이 사용 시, 저작권법 및 관련 법률로 인해 제공처와 법적 분쟁이 발생할 수 있습니다.
+                                말랑에서 서비스 하는 모든 내용들은 지적재산권에 의해 보호 받으며 말라에 사전 승인 없이 어떠한 경우도 대여 · 배포 · 판매 행위가 금지되어 있습니다.
+                            </li>
+                            <h2 class="terms-name"> 3. 말랑의 콘텐츠의 배포 및 인용 </h2>
+                            <li>
+                                말랑의 콘텐츠 내용을 인용 또는 발췌 · 복제 · 변조 · 양도 · 출판 · 전시 · 수정하여 상업적인 목적으로 다수를 대상으로 배포하는 행위는 금지되어
+                                있습니다.
+                                다만 비영리적인 목적을 위하여 사용할 경우나 말랑과 사용 가능한 콘텐츠의 범위 등에 대해 사전 협의를 득한 후에는 그 내용의 인용이 가능하며,
+                                말랑과 콘텐츠 라이선스 계약을 한 업체들에 한해 말랑 콘텐츠의 배포를 허가하며 이런 경우에도 반드시 "말랑"이라는 출처 표기와 양사 계약 시 협의된 규칙을
+                                준수해야만
+                                합니다.
+                            </li>
+                            <h2 class="terms-name">4. 링크</h2>
+                            <li>
+                                말랑 사전 동의 없이 일부 내용을 발췌 또는 인용한 후 안랩의 특정 페이지로 링크하는 행위를 금지합니다.
+                            </li>
+                            <h5 class="terms-cs">
+                                위 약관 내용에 따라 협의를 원하는 내용이 있거나 또는 허가된 것 이외의 방식으로 말랑의 콘텐츠를 이용하기 원한다면
+                                콘텐츠 담당자 xxxxxxxx@gmail.com 에게 E-mail을 보내주시기 바랍니다.
+                            </h5>
+                        </ul>
+                    </div>
+                    <input class="check-box" type="checkbox" name="checkBox" id="checkBoxUse" value="1" />
+                    이용약관 동의
+                </label>
+                <!--수집동의-->
+                <label for="check">
+                    <div class="join-content">
+                        <ul>
+                            <span> 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 <b><u>없도록</b></u> 하기 위하여 다음과 같이 개인정보
+                                처리방침을
+                                수립·공개합니다.</span>
+
+                            <h2 class="privacy-name">제1조(개인정보의 처리 목적)</h2>
+                            <li>
+                                1. 홈페이지 회원가입 및 관리
+                                회원 가입의사 확인 목적으로 개인정보를 처리합니다.
+                            </li>
+                            <li>
+                                2. 민원사무 처리
+                                민원인의 신원 확인 목적으로 개인정보를 처리합니다.
+                            </li>
+                            <li>
+                                3. 재화 또는 서비스 제공
+                                서비스 제공을 목적으로 개인정보를 처리합니다.
+                            </li>
+                            <h2 class="privacy-name">제2조(개인정보의 처리 및 보유 기간)</h2>
+                            <li>
+                                각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.
+                            </li>
+                            <li>
+                                재화 또는 서비스 제공와 관련한 개인정보는 수집.이용에 관한 동의일로부터 '지체없이 파기'까지 위 이용목적을 위하여 보유.이용됩니다.
+                            </li>
+                            <h2 class="privacy-name"> 제3조(개인정보의 제3자 제공) </h2>
+                            <li>
+                                개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의,
+                                법률의 특별한 규정 등 「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공 <b><u>안합니다.</u></b>
+                            </li>
+                            <h2 class="privacy-name">제4조(개인정보처리 위탁)</h2>
+                            <li>
+                                말랑(malling) 은(는) 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁 <b><u>안하고 있습니다</u></b>
+                            </li>
+                            <h2 class="privacy-name">제5조(정보주체와 법정대리인의 권리·의무 및 그 행사방법)</h2>
+                            <li>
+                                ① 정보주체는 말랑(malling)에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.<br>
+                                ② 제1항에 따른 권리 행사는말랑(malling)에 대해 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편,
+                                모사전송(FAX) 등을 통하여 하실 수 있으며 말랑(malling)은(는) 이에 대해 <b><u>지체하겠습니다.</u></b><br>
+                                ③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다.
+                                이 경우 “개인정보 처리 방법에 관한 고시(제2020-7호)” 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.<br>
+                                ④ 개인정보 열람 및 처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다.<br>
+                                ⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.<br>
+                                ⑥ 말랑(malling)은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한
+                                대리인인지를
+                                확인합니다.<br>
+                            </li>
+                            <h2 class="privacy-name">제7조(개인정보의 파기</h2>
+                            <li>
+                                ① 말랑(malling) 은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br>
+                                ② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를
+                                계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 <b><u>보존안합니다.</u></b>
+                            </li>
+                            <h2 class="privacy-name">제8조(개인정보의 안전성 확보 조치)</h2>
+                            <li>
+                                1. 정기적인 자체 감사 실시<br>
+                                개인정보 취급 관련 안정성 확보를 위해 정기적 <b><u>(분기 0회)</u></b> 으로 자체 감사를 절대안하고 있습니다.<br>
+                                2. 개인정보의 암호화<br>
+                                이용자의 개인정보는 비밀번호는 암호화 되어 저장 및 관리되고 있어, 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화 하거나 파일 잠금
+                                기능을 사용하는 등의
+                                별도 보안기능을 사용 <b><u>안하고 있습니다.</u></b>
+                            </li>
+                            <h2 class="privacy-name">제9조(개인정보 자동 수집 장치의 설치•운영 및 거부에 관한 사항)</h2>
+                            <li>
+                                ① 말랑(malling) 은(는) 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를
+                                사용합니다.<br>
+                                ② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터내의 하드디스크에
+                                저장되기도 합니다.<br>
+                                가. 쿠키의 사용 목적 : 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된
+                                정보 제공을 위해
+                                사용됩니다.<br>
+                                나. 쿠키의 설치•운영 및 거부 : 웹브라우저 상단의 도구>인터넷 옵션>개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부 할 수 있습니다.<br>
+                                다. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.<br>
+                            </li>
+                            <h2 class="privacy-name">제10조 (개인정보 보호책임자)</h2>
+                            <li>
+                                ① 말랑(malling) 은(는) 개인정보 처리에 관한 업무를 총괄해서 <b><u>책임 절대 안지고,</u></b> 개인정보 처리와 관련한 정보주체의 불만처리
+                                및 피해구제 등을
+                                위하여 아래와 같이 개인정보 보호책임자를 지정 <b><u>안하고 있습니다.</u></b>
+                                ② 정보주체께서는 말랑(malling) 의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을
+                                개인정보 보호책임자 및
+                                담당부서로 문의하실 수 <b><u>없습니다.</u></b>
+                                말랑(malling) 은(는) 정보주체의 문의에 대해 <b><u>지체해드릴</u></b> 것입니다.
+                            </li>
+                            <h5 class="privacy-cs">위 약관 내용에 따라 협의를 원하는 내용이 있거나 또는 허가된 것 이외의 방식으로 말랑의 콘텐츠를 이용하기 원한다면
+                                콘텐츠 담당자 xxxxxxxx@gmail.com 에게 E-mail을 보내주시기 바랍니다.
+                            </h5>
+                        </ul>
+                    </div>
+                    <input class="check-box" type="checkbox" name="checkBox" id="checkBoxData" value="2" />
+                    개인정보 수집 및 이용 동의<br />
+                </label>
+                <div id="button-container">
+                    <input type="button" id="cancel" onclick="mainPage()" value="취소" />
+                    <input type="submit" id="accept" value="확인" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- 아래로 푸터 -->
+    <div id="footer">
+        <div id="footer-container">
+            <div id="footer-top">
+                <ul id="footer-TL">
+                    <li><a href="terms.html">이용약관</a></li>
+                    <li><a href="privacy.html">개인정보처리방침</a></li>
+                </ul>
+                <ul id="footer-TR">
+                    <li>개인블로그</li>
+                    <!-- 블로그 주소 변경시 main자바에서 주소변경 -->
+                    <li><a href="#PSG">박성근<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#PHM">박해민<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#LCS">임철순<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                    <li><a href="#GJH">곽지현<img src="images/bloglogo.png" alt="blog-logo"></a></li>
+                </ul>
+            </div>
+            <div id="footer-line"></div>
+            <div id="footer-low">
+                <ul id="footer-lowDL">
+                    <span>©제작된 본 홈페이지에 대한 모든 권리는 mallang에 귀속됩니다.</span>
+                </ul>
+                <ul id="footer-lowDR">
+                    <span>주소 : 서울특별시 강동구 천호대로 995 금복빌딩 3,4층</span><br>
+                    <span>Tel : 00-000-0000 팩스번호 : 000-0000-0000</span>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="java.js/join.js"></script>
+    <script src="java.js/main.js"></script>
+</body>
+
+</html>
